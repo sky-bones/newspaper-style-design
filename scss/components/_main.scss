@@ -26,13 +26,13 @@ img {
 }
 
 body{
-    font-family: 'Droid Serif', serif;
+    font-family: $droid;
     font-size: 14px;
-    color: #2f2f2f;
-    background-color: #f9f7f1;
+    color: $black;
+    background-color: $cream;
 }
 header{
-    font-family: 'Playfair Display', serif;
+    font-family: $playfair;
     font-weight: 900;
     font-size: 80px;
     text-transform: uppercase;
@@ -74,39 +74,25 @@ p{
     margin: 0 50px 20px -360px;
 }
 .content{
-    font-size: 0;
-    line-height: 0;
-    word-spacing: -.31em;
+
     display: inline-block;
     margin: 30px 2% 0 2%;
-
-
-}
-.collumns{
-
 }
 
-.collumn{
-    font-size: 14px;
-    line-height: 20px;
-    display: inline-block;
-    padding: 0 1% 0 1%;
-    vertical-align: top;
-    margin-bottom: 50px;
-    transition: all .7s;
-}
+
 .collumn + .collumn {
   border-left: 1px solid #2f2f2f;
 }
-.collumn .headline{
+.headline{
+	@include collumn;
     text-align: center;
     line-height: normal;
-    font-family: 'Playfair Display', serif;
+    font-family: $playfair;
     display: block;
     margin: 0 auto;
-
-
 }
+
+
 .collumn .headline.hl1{
     font-weight: 700;
     font-size: 30px;
@@ -276,12 +262,12 @@ p{
 
 	.collumn{
 		width: 100%;
-  }
+	}
 
 	.collumn + .collumn {
 		border-left: none;
 		border-bottom: 1px solid #2f2f2f;
-  }
+	}
 
 	header{
 		max-width: 320px;
