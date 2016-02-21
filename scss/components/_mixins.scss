@@ -10,4 +10,49 @@
 
 }
 
+@mixin headline {
+		@include collumn;
+    text-align: center;
+    line-height: normal;
+    font-family: $playfair;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@mixin headlinel1 {
+	@include headline;
+	  font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 10px 0 10px 0;
+}
+
+
+@mixin headlinel2 {
+	@include headline;
+	  font-weight: 400;
+    font-style: italic;
+    font-size: 24px;
+    box-sizing: border-box;
+    padding: 10px 0 10px 0;
+
+    &:after{
+    	width: 100px;
+		border-bottom: $line1;
+}
+
+    &:before {
+    	border-top: $line1;
+    }
+}
+
+@mixin headlinel3 {
+
+}
+
+
+
+
+
 

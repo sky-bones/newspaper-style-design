@@ -58,15 +58,6 @@ p {
   margin-bottom: 20px;
 }
 
-.head {
-  text-align: center;
-  position: relative;
-}
-
-.collumn {
-  width: 17.5%;
-}
-
 .subhead {
   text-transform: uppercase;
   border-bottom: 2px solid #2f2f2f;
@@ -110,7 +101,7 @@ p {
   margin: 0 auto;
 }
 
-.headline.hl1 {
+.hl1 {
   font-size: 14px;
   line-height: 20px;
   display: inline-block;
@@ -118,13 +109,18 @@ p {
   vertical-align: top;
   margin-bottom: 50px;
   transition: all .7s;
+  text-align: center;
+  line-height: normal;
+  font-family: "Playfair Display" serif;
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
   padding: 10px 0 10px 0;
 }
 
-.headline.hl2 {
+.hl2 {
   font-size: 14px;
   line-height: 20px;
   display: inline-block;
@@ -132,6 +128,11 @@ p {
   vertical-align: top;
   margin-bottom: 50px;
   transition: all .7s;
+  text-align: center;
+  line-height: normal;
+  font-family: "Playfair Display" serif;
+  display: block;
+  margin: 0 auto;
   font-weight: 400;
   font-style: italic;
   font-size: 24px;
@@ -139,29 +140,13 @@ p {
   padding: 10px 0 10px 0;
 }
 
-.headline.hl2:before {
-  font-size: 14px;
-  line-height: 20px;
-  display: inline-block;
-  padding: 0 1% 0 1%;
-  vertical-align: top;
-  margin-bottom: 50px;
-  transition: all .7s;
-  border-top: 1px solid #2f2f2f;
-  content: '';
+.hl2:after {
   width: 100px;
-  height: 7px;
-  display: block;
-  margin: 0 auto;
+  border-bottom: 1px solid #2f2f2f;
 }
 
-.collumn .headline.hl2:after {
-  border-bottom: 1px solid #2f2f2f;
-  content: '';
-  width: 100px;
-  height: 13px;
-  display: block;
-  margin: 0 auto;
+.hl2:before {
+  border-top: 1px solid #2f2f2f;
 }
 
 .collumn .headline.hl3 {
@@ -308,9 +293,6 @@ p {
 }
 
 @media only screen and (min-width: 25em) {
-  .collumn {
-    width: 100%;
-  }
   .collumn + .collumn {
     border-left: none;
     border-bottom: 1px solid #2f2f2f;
@@ -324,17 +306,8 @@ p {
 }
 
 @media only screen and (min-width: 36em) {
-  .collumn {
-    width: 47%;
-  }
   .weatherforcastbox {
     display: none;
-  }
-}
-
-@media only screen and (min-width: 60em) {
-  .collumn {
-    width: 31%;
   }
 }
 

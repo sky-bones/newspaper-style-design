@@ -45,17 +45,12 @@ p{
     margin-top: 0;
     margin-bottom: 20px;
 }
-.head{
-    text-align: center;
-    position: relative;
-}
+
 
 .collumn {
-	width: 17.5%;
+
 }
 
-.headerobjectswrapper{
-}
 
 .subhead{
     text-transform: uppercase;
@@ -65,7 +60,7 @@ p{
 
 }
 .weatherforcastbox{
-		font-style: italic;
+	font-style: italic;
     position: relative;
     width: 12%;
     left: 10px;
@@ -88,51 +83,25 @@ p{
 
 
 .headline{
-	@include collumn;
-    text-align: center;
-    line-height: normal;
-    font-family: $playfair;
-    display: block;
-    margin: 0 auto;
+	@include headline;
+}
+
+.hl1 {
+    @include headlinel1;
+}
+
+.hl2 {
+    @include headlinel2;
+}
+
+.hl3 {
+    @include headlinel3;
 }
 
 
- .headline.hl1{
-		@include collumn;
-    font-weight: 700;
-    font-size: 30px;
-    text-transform: uppercase;
-    padding: 10px 0 10px 0;
 
-}
 
- .headline.hl2{
- 		@include collumn;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 24px;
-    box-sizing: border-box;
-    padding: 10px 0 10px 0;
-}
 
-.headline.hl2:before{
-		@include collumn;
-    border-top: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 7px;
-    display: block;
-    margin: 0 auto;
-}
-.collumn .headline.hl2:after{
-    border-bottom: 1px solid #2f2f2f;
-    content: '';
-    width: 100px;
-    height: 13px;
-    display: block;
-    margin: 0 auto;
-
-}
 
 .collumn .headline.hl3{
     font-weight: 400;
@@ -141,6 +110,7 @@ p{
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
+
 .collumn .headline.hl4{
     font-weight: 700;
     font-size: 12px;
@@ -267,9 +237,6 @@ p{
 
 @media only screen and (min-width: 25em) {
 
-	.collumn{
-		width: 100%;
-	}
 
 	.collumn + .collumn {
 		border-left: none;
@@ -285,9 +252,7 @@ p{
 }
 
 @media only screen and (min-width: 36em) {
-	.collumn{
-		width: 47%;
-	}
+
 
 	.weatherforcastbox{
 		display: none;
@@ -296,9 +261,7 @@ p{
 
 
 @media only screen and (min-width: 60em){
-	.collumn{
-		width: 31%;
-	}
+
 
 }
 
