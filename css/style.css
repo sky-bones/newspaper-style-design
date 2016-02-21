@@ -63,6 +63,10 @@ p {
   position: relative;
 }
 
+.collumn {
+  width: 17.5%;
+}
+
 .subhead {
   text-transform: uppercase;
   border-bottom: 2px solid #2f2f2f;
@@ -106,14 +110,28 @@ p {
   margin: 0 auto;
 }
 
-.collumn .headline.hl1 {
+.headline.hl1 {
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 0 1% 0 1%;
+  vertical-align: top;
+  margin-bottom: 50px;
+  transition: all .7s;
   font-weight: 700;
   font-size: 30px;
   text-transform: uppercase;
   padding: 10px 0 10px 0;
 }
 
-.collumn .headline.hl2 {
+.headline.hl2 {
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 0 1% 0 1%;
+  vertical-align: top;
+  margin-bottom: 50px;
+  transition: all .7s;
   font-weight: 400;
   font-style: italic;
   font-size: 24px;
@@ -121,7 +139,14 @@ p {
   padding: 10px 0 10px 0;
 }
 
-.collumn .headline.hl2:before {
+.headline.hl2:before {
+  font-size: 14px;
+  line-height: 20px;
+  display: inline-block;
+  padding: 0 1% 0 1%;
+  vertical-align: top;
+  margin-bottom: 50px;
+  transition: all .7s;
   border-top: 1px solid #2f2f2f;
   content: '';
   width: 100px;

@@ -48,8 +48,10 @@ p{
 .head{
     text-align: center;
     position: relative;
+}
 
-
+.collumn {
+	width: 17.5%;
 }
 
 .headerobjectswrapper{
@@ -73,8 +75,8 @@ p{
     display: inline-block;
     margin: 0 50px 20px -360px;
 }
-.content{
 
+.content{
     display: inline-block;
     margin: 30px 2% 0 2%;
 }
@@ -83,6 +85,8 @@ p{
 .collumn + .collumn {
   border-left: 1px solid #2f2f2f;
 }
+
+
 .headline{
 	@include collumn;
     text-align: center;
@@ -93,7 +97,8 @@ p{
 }
 
 
-.collumn .headline.hl1{
+ .headline.hl1{
+		@include collumn;
     font-weight: 700;
     font-size: 30px;
     text-transform: uppercase;
@@ -101,7 +106,8 @@ p{
 
 }
 
-.collumn .headline.hl2{
+ .headline.hl2{
+ 		@include collumn;
     font-weight: 400;
     font-style: italic;
     font-size: 24px;
@@ -109,7 +115,8 @@ p{
     padding: 10px 0 10px 0;
 }
 
-.collumn .headline.hl2:before{
+.headline.hl2:before{
+		@include collumn;
     border-top: 1px solid #2f2f2f;
     content: '';
     width: 100px;
