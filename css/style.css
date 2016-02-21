@@ -65,25 +65,9 @@ p {
   padding: 12px 0 12px 0;
 }
 
-.weatherforcastbox {
-  font-style: italic;
-  position: relative;
-  width: 12%;
-  left: 10px;
-  border: 3px double #2f2f2f;
-  padding: 10px 15px 10px 15px;
-  line-height: 20px;
-  display: inline-block;
-  margin: 0 50px 20px -360px;
-}
-
 .content {
   display: inline-block;
   margin: 30px 2% 0 2%;
-}
-
-.collumn + .collumn {
-  border-left: 1px solid #2f2f2f;
 }
 
 .headline {
@@ -344,8 +328,7 @@ p {
 }
 
 @media only screen and (min-width: 25em) {
-  .collumn + .collumn {
-    border-left: none;
+  .collumn {
     border-bottom: 1px solid #2f2f2f;
   }
 }
