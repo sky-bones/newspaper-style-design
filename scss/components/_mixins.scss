@@ -4,7 +4,6 @@
     display: inline-block;
     padding: 0 1% 0 1%;
     vertical-align: top;
-    margin-bottom: 50px;
     transition: all .7s;
 
 }
@@ -93,6 +92,7 @@
 
 
 @mixin headlinel5 {
+	@include headline;
 	  font-weight: 400;
     font-size: 42px;
     text-transform: uppercase;
@@ -103,6 +103,7 @@
 }
 
 @mixin headlinel6 {
+	@include headline;
     font-weight: 400;
     font-size: 18px;
     box-sizing: border-box;
@@ -129,11 +130,44 @@
 
 
 @mixin headlinel7 {
+	@include headline;
 	  font-weight: 700;
     font-size: 12px;
     box-sizing: border-box;
     padding: 10px 0 10px 0;
 }
+
+
+@mixin citation {
+	  font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    line-height: 44px;
+    /*font-style: italic;*/
+    text-align: center;
+    font-weight: 400;
+    display: block;
+    margin: 40px 0 40px 0;
+    font-feature-settings: "liga", "dlig";
+
+    &:before {
+    border-top: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+    }
+
+    &:after {
+    border-bottom: 1px solid #2f2f2f;
+    content: '';
+    width: 100px;
+    height: 16px;
+    display: block;
+    margin: 0 auto;
+    }
+}
+
 
 
 
